@@ -1,4 +1,4 @@
-# xfinlink examples
+# xfinlink
 
 Free financial data API for US equities. Six endpoints, 30+ years of history, built-in entity resolution for ticker recycling.
 
