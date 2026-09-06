@@ -1,0 +1,5 @@
+Exporters are meant to fall when the dollar rallies. Measured per company on 145 S&P 500 names, foreign revenue share does not predict dollar beta at all: coefficient -0.04, t = -0.29.
+
+What it does predict is market beta. +1.05, t = 6.25.
+
+[BLOG_LINK]

@@ -3991,6 +3991,23 @@
       "status": "success",
       "blog_slug": "does-company-size-slow-revenue-growth-python",
       "script_path": "scripts/fundamental-analysis/does-company-size-slow-revenue-growth-python.py"
+    },
+    {
+      "date": "2026-09-06",
+      "category": "macro_research, cross_sectional_analysis, signal_evaluation",
+      "title": "Does Foreign Revenue Make a Stock Dollar-Sensitive? Firm-Level FX Beta in Python",
+      "tickers": [
+        "S&P 500 roster point-in-time at 2023-09-01 (145 companies with a reconciling United States revenue line)",
+        "SPY",
+        "FXE",
+        "FXY",
+        "FXB",
+        "FXC",
+        "FXF"
+      ],
+      "status": "success",
+      "blog_slug": "foreign-revenue-dollar-beta-python",
+      "script_path": "scripts/macro-research/foreign-revenue-dollar-beta-python.py"
     }
   ]
 }
