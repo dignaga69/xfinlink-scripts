@@ -3980,6 +3980,17 @@
       "status": "success",
       "blog_slug": "does-large-goodwill-predict-writedowns-python",
       "script_path": "scripts/balance-sheet-health/does-large-goodwill-predict-writedowns-python.py"
+    },
+    {
+      "date": "2026-09-06",
+      "category": "growth_screening, cross_sectional_analysis, econometric_research",
+      "title": "Does Company Size Slow Revenue Growth? Gibrat's Law Test in Python",
+      "tickers": [
+        "Point-in-time S&P 500 rosters at 2014-12-31 and 2019-12-31 ex Financials (346 and 387 companies with a five-year forward pair)"
+      ],
+      "status": "success",
+      "blog_slug": "does-company-size-slow-revenue-growth-python",
+      "script_path": "scripts/fundamental-analysis/does-company-size-slow-revenue-growth-python.py"
     }
   ]
 }
