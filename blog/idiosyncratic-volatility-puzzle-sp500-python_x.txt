@@ -1,0 +1,7 @@
+Ang, Hodrick, Xing and Zhang found high idiosyncratic vol earns LOWER returns.
+
+119 point-in-time S&P 500 sorts, 2016-2025: the top quintile earned 0.30% a month MORE. t = 0.71. Nothing there.
+
+The catch: that sort overlaps a plain vol sort 86.6% of the time.
+
+[BLOG_LINK]
