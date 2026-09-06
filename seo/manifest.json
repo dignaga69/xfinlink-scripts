@@ -510,5 +510,18 @@
     ],
     "claims_verified": true,
     "status": "published"
+  },
+  {
+    "date": "2026-09-06",
+    "type": "use-case guide",
+    "title": "How to Get Stock Data Into Excel With Python",
+    "slug": "how-to-get-stock-data-into-excel",
+    "competitors_mentioned": [
+      "Excel STOCKHISTORY",
+      "Google Sheets GOOGLEFINANCE",
+      "Alpha Vantage",
+      "yfinance"
+    ],
+    "claims_verified": true
   }
 ]

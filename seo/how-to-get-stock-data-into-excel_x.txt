@@ -1,0 +1,1 @@
+Excel's STOCKHISTORY returns six columns of price history and nothing else. No revenue, no margins, no index membership. About twenty lines of Python write the whole watchlist to a CSV instead, and the workbook refreshes from that file on a schedule. [BLOG_LINK]
