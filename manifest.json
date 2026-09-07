@@ -4049,6 +4049,22 @@
       "status": "success",
       "blog_slug": "volatility-shock-half-life-python",
       "script_path": "scripts/econometric-research/volatility-shock-half-life-python.py"
+    },
+    {
+      "date": "2026-09-07",
+      "category": "correlation_beta, portfolio_construction, risk_management, factor_construction, cross_sectional_analysis",
+      "title": "Does a Stock's Beta Depend on the Benchmark? Cap-Weighted vs Equal-Weighted Markets in Python",
+      "tickers": [
+        "SP500 point-in-time roster at 2023-09-05 (466 with complete weekly series)",
+        "AAPL",
+        "MSFT",
+        "NVDA",
+        "ZION",
+        "MHK"
+      ],
+      "status": "success",
+      "blog_slug": "beta-cap-weighted-vs-equal-weighted-market-python",
+      "script_path": "scripts/portfolio-construction/beta-cap-weighted-vs-equal-weighted-market-python.py"
     }
   ]
 }

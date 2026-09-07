@@ -1,0 +1,3 @@
+Beta depends on which market you regress against. Same 466 S&P 500 companies, two weightings, three years of weekly returns: the average member's beta is 0.783 to the cap-weighted index and 0.989 to the equal-weighted one. 85.8% score higher against equal weight.
+
+[BLOG_LINK]
