@@ -1,0 +1,1 @@
+A list of all US stock tickers: the Nasdaq directory held 13,155 non-test symbols on 4 Sep. The full US entity registry holds 46,502, because a symbol leaves the file the day the company leaves the market. 2,731 strings ended on two or more companies. [BLOG_LINK]
