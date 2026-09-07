@@ -4037,6 +4037,18 @@
       "status": "success",
       "blog_slug": "dcf-assumption-sensitivity-python",
       "script_path": "scripts/fundamental-analysis/dcf-assumption-sensitivity-python.py"
+    },
+    {
+      "date": "2026-09-07",
+      "category": "volatility_analysis, time_series_analysis, econometric_research, financial_derivatives",
+      "title": "How Long Does a Volatility Spike Take to Fade? Half-Life Estimation in Python",
+      "tickers": [
+        "SP500",
+        "SPY"
+      ],
+      "status": "success",
+      "blog_slug": "volatility-shock-half-life-python",
+      "script_path": "scripts/econometric-research/volatility-shock-half-life-python.py"
     }
   ]
 }

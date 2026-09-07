@@ -1,0 +1,5 @@
+Fit an AR(1) to S&P 500 realised vol: half-life is 3.4 trading days on weekly blocks, 34 days on two-month blocks. Same 381 stocks, same decade.
+
+Six months after a real top-5% vol week, 14% of the spike is still there. One mean-reversion speed can't price that.
+
+[BLOG_LINK]
