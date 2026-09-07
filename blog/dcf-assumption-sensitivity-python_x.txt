@@ -1,0 +1,7 @@
+One DCF, 328 S&P 500 companies, 20 plausible assumption sets.
+
+At a 7% discount rate it calls 72% of them undervalued. At 11%, 19%.
+
+Same companies, same filings. Half the index sits inside its own fair-value band, so the model cannot call the price wrong.
+
+[BLOG_LINK]

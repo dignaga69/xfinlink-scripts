@@ -4020,6 +4020,23 @@
       "status": "success",
       "blog_slug": "idiosyncratic-volatility-puzzle-sp500-python",
       "script_path": "scripts/signal-evaluation/idiosyncratic-volatility-puzzle-sp500-python.py"
+    },
+    {
+      "date": "2026-09-07",
+      "category": "dcf_valuation, valuation_ratios, fundamental_analysis, earnings_quality, sector_comparison",
+      "title": "How Much Does a DCF Depend on Its Assumptions? Sensitivity Analysis in Python",
+      "tickers": [
+        "current S&P 500 ex Financials/Real Estate (328 companies)",
+        "NVDA",
+        "GOOGL",
+        "AAPL",
+        "MSFT",
+        "TSLA",
+        "LLY"
+      ],
+      "status": "success",
+      "blog_slug": "dcf-assumption-sensitivity-python",
+      "script_path": "scripts/fundamental-analysis/dcf-assumption-sensitivity-python.py"
     }
   ]
 }
