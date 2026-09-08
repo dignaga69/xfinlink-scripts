@@ -4087,6 +4087,17 @@
       "status": "success",
       "blog_slug": "sell-in-may-by-sector-python",
       "script_path": "scripts/seasonality/sell-in-may-by-sector-python.py"
+    },
+    {
+      "date": "2026-09-08",
+      "category": "optimization_problem, portfolio_construction, risk_management, factor_construction, cross_sectional_analysis",
+      "title": "Does Mean-Variance Optimisation Beat Equal Weighting? Out-of-Sample Test in Python",
+      "tickers": [
+        "Point-in-time S&P 500 rosters at 1 January each year 2006-2024 (19 rosters, 150 members drawn per year, 228 out-of-sample months)"
+      ],
+      "status": "success",
+      "blog_slug": "mean-variance-vs-equal-weight-out-of-sample-python",
+      "script_path": "scripts/portfolio-construction/mean-variance-vs-equal-weight-out-of-sample-python.py"
     }
   ]
 }

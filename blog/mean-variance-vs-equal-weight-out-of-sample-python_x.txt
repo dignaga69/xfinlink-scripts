@@ -1,0 +1,3 @@
+Nineteen annual rebalances on point-in-time S&P 500 rosters, 2006-2024. Adding estimated expected returns to the optimiser lifted its in-sample Sharpe from 1.55 to 2.24, then delivered 0.760 out of sample. Minimum variance, which never sees a mean, delivered 0.799.
+
+[BLOG_LINK]
