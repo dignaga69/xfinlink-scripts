@@ -1,0 +1,3 @@
+One year of daily closes for ten large caps: 2,510 rows, 560 KB, one call. The same window as day-aggregate flat files is 251 daily files covering every ticker that traded, then a filter step.
+
+Bulk download or API, and where each one stops working: [BLOG_LINK]

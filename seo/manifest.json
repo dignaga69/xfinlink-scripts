@@ -535,5 +535,17 @@
       "Alpha Vantage"
     ],
     "claims_verified": true
+  },
+  {
+    "date": "2026-09-08",
+    "type": "comparison",
+    "title": "Bulk Stock Data Download vs API: Which to Use",
+    "slug": "bulk-stock-data-download-vs-api",
+    "competitors_mentioned": [
+      "Massive (formerly Polygon.io)",
+      "SEC Financial Statement Data Sets",
+      "SEC EDGAR bulk archives"
+    ],
+    "claims_verified": true
   }
 ]
