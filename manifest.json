@@ -4065,6 +4065,28 @@
       "status": "success",
       "blog_slug": "beta-cap-weighted-vs-equal-weighted-market-python",
       "script_path": "scripts/portfolio-construction/beta-cap-weighted-vs-equal-weighted-market-python.py"
+    },
+    {
+      "date": "2026-09-08",
+      "category": "dividend_screening, balance_sheet_health, profitability_analysis, cross_sectional_analysis, signal_evaluation",
+      "title": "Does Free Cash Flow Coverage Predict Dividend Cuts Better Than the Payout Ratio? Point-in-Time Screening in Python",
+      "tickers": [
+        "S&P 500 point-in-time roster at 2019-06-28 carried by entity_id (501 entities, 382 regular dividend payers)"
+      ],
+      "status": "success",
+      "blog_slug": "fcf-coverage-vs-payout-ratio-dividend-cuts-python",
+      "script_path": "scripts/fundamental-analysis/fcf-coverage-vs-payout-ratio-dividend-cuts-python.py"
+    },
+    {
+      "date": "2026-09-08",
+      "category": "seasonality, market_timing_analysis, time_series_analysis, sector_comparison, sector_rotation",
+      "title": "Which Sectors Actually Drive \"Sell in May\"? Sector Seasonality Analysis in Python",
+      "tickers": [
+        "Point-in-time S&P 500 rosters at 1 January each year 2001-2024 (978 entities, 914 with a usable monthly series)"
+      ],
+      "status": "success",
+      "blog_slug": "sell-in-may-by-sector-python",
+      "script_path": "scripts/seasonality/sell-in-may-by-sector-python.py"
     }
   ]
 }
