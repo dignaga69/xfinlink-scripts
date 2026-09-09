@@ -4098,6 +4098,17 @@
       "status": "success",
       "blog_slug": "mean-variance-vs-equal-weight-out-of-sample-python",
       "script_path": "scripts/portfolio-construction/mean-variance-vs-equal-weight-out-of-sample-python.py"
+    },
+    {
+      "date": "2026-09-09",
+      "category": "profitability_analysis, growth_screening, fundamental_analysis, cross_sectional_analysis",
+      "title": "Does High Profitability Persist? Five-Year Transition Analysis in Python",
+      "tickers": [
+        "603 S&P 500 members across the 2009-2019 point-in-time rosters (AAPL, XOM, JPM, PG, YUM, ...)"
+      ],
+      "status": "success",
+      "blog_slug": "does-high-profitability-persist-python",
+      "script_path": "scripts/fundamental-analysis/does-high-profitability-persist-python.py"
     }
   ]
 }
