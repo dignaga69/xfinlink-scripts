@@ -1,0 +1,1 @@
+Adding up daily returns is not compounding them. Nvidia's daily price returns from 2015 to 2024 sum to 676 percent. Its price actually rose 26,584 percent. Log returns add across time, simple returns average across holdings, and swapping them is expensive. [BLOG_LINK]

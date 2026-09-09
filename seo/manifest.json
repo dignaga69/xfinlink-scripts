@@ -547,5 +547,13 @@
       "SEC EDGAR bulk archives"
     ],
     "claims_verified": true
+  },
+  {
+    "date": "2026-09-09",
+    "type": "concept explainer",
+    "title": "Log Returns vs Simple Returns: Which to Use",
+    "slug": "log-returns-vs-simple-returns",
+    "competitors_mentioned": [],
+    "claims_verified": true
   }
 ]
