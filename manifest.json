@@ -4109,6 +4109,17 @@
       "status": "success",
       "blog_slug": "does-high-profitability-persist-python",
       "script_path": "scripts/fundamental-analysis/does-high-profitability-persist-python.py"
+    },
+    {
+      "date": "2026-09-09",
+      "category": "index_constituent_analysis, index_rebalancing, entity_resolution_showcase, cross_sectional_analysis, multi_endpoint_pipeline",
+      "title": "How Much Does Survivorship Bias Add to a Backtest? Point-in-Time S&P 500 Returns in Python",
+      "tickers": [
+        "Point-in-time S&P 500 rosters at 1 January each year 2005-2024 plus the current roster, carried by entity_id (910 entities, 240 months, 169,280 company-months)"
+      ],
+      "status": "success",
+      "blog_slug": "survivorship-bias-point-in-time-sp500-python",
+      "script_path": "scripts/index-universe/survivorship-bias-point-in-time-sp500-python.py"
     }
   ]
 }

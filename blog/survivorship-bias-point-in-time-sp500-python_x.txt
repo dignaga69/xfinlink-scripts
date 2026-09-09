@@ -1,0 +1,5 @@
+An equal-weight S&P 500 backtest run on today's membership list compounds at 15.42% a year over 2005-2024. Run on the roster of each January instead: 9.97%.
+
+The 5.45-point gap is survivorship bias. It is larger than most factor premia anyone is testing for.
+
+[BLOG_LINK]
