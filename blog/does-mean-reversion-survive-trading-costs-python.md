@@ -4,21 +4,21 @@ September 9, 2026 · SIGNAL-EVALUATION
 
 **What's the question?**
 
-A stock trading well below its own 50-day average is either cheap or falling for a reason. Mean-reversion rules take the first view: buy the stretch, wait for the price to return to the average, sell. Whether that return trip exists, how long it takes, and whether what arrives beats the cost of trading are three questions, and most versions of the rule answer only the first.
+A stock trading well below its own 50-day average is either cheap or falling for a reason. Mean-reversion rules take the first view: buy the stretch, wait for the price to return to the average, sell. Whether that return trip exists, how long it takes, and whether what arrives beats the cost of trading are three questions; most versions of the rule answer only the first.
 
-The Augmented Dickey-Fuller test (ADF) answers it. The test looks for a unit root, the signature of a series that wanders with no fixed mean pulling it back, and a p-value below 0.05 rejects that and calls the series stationary. Speed is separate: regress today's deviation from the average on yesterday's for a coefficient b, and the sessions needed to close half the gap come to -ln(2)/ln(b). That is the half-life.
+The Augmented Dickey-Fuller test (ADF) answers it by looking for a unit root, the signature of a series that wanders with no fixed mean pulling it back; a p-value below 0.05 rejects that and calls the series stationary. Speed is separate: regress today's deviation from the average on yesterday's for a coefficient b, and the sessions needed to close half the gap come to -ln(2)/ln(b). That is the half-life.
 
-Cost is the third question, and a trap sits in front of it. Prices fall below their averages mostly on days when the whole market falls, so the bounce that follows may be the index recovering rather than anything about the stock.
+Cost is the third question, and a trap sits in front of it. Prices fall below their averages mostly when the whole market falls, so the bounce that follows may be the index recovering rather than anything about the stock.
 
 **The approach**
 
-1. Take the S&P 500 as it stood on 2019-12-31 from a point-in-time membership record, carrying each company by entity id so that a ticker later reassigned elsewhere cannot substitute one series for another. 501 entities.
-2. Pull daily split-adjusted closes for 2020-01-01 to 2024-12-31. The series carry no dividend component, so every return below is a price return.
-3. Companies without a complete series for the window leave the sample, as do companies whose adjusted price moves more than 40% in one session, a size that means a corporate action. 439 remain.
-4. Take each company's deviation: log price minus its own trailing 50-session average. Run ADF on the deviation and on the log price, and fit AR(1) to the deviation for the half-life.
-5. Scale the deviation by its own trailing 250-session standard deviation. The two windows consume 300 sessions, so signal dates begin in March 2021.
+1. Take the S&P 500 as it stood on 2019-12-31 from a point-in-time membership record, carrying each company by entity id so that a recycled ticker cannot substitute one series for another. 501 entities.
+2. Pull the daily adjusted close for 2020-01-01 to 2024-12-31. The series carries no dividend component, so every return below is a price return.
+3. Companies without a complete series for the window leave the sample, as do those whose adjusted price moves more than 40% in one session, a size that means a corporate action. 439 remain.
+4. Take each company's deviation: log price minus its own trailing 50-session average. Run ADF on the deviation and on the log price, then fit AR(1) for the half-life.
+5. Scale the deviation by its own trailing 250-session standard deviation. The two windows consume 300 sessions, so signals begin in March 2021.
 6. Mark a signal wherever the scaled deviation sits at or below -1.5, record the price return over the next 5 sessions, and compare it with that company's average 5-session return.
-7. Repeat that comparison after subtracting the equal-weighted return of all 439 companies on the same date, which strips out the market's own move, then charge 20 basis points (0.20%) for the round trip.
+7. Repeat that comparison after subtracting the equal-weighted return of all 439 companies that date, which strips out the market's move, then charge 20 basis points (0.20%) for the round trip.
 
 **Code**
 
@@ -110,20 +110,20 @@ By signal year                           raw edge   less market
 
 **What this tells us**
 
-The two ADF results split cleanly. Only 32 of 439 log price series reject the unit root at 5%, while the deviation rejects in all 439. That is close to mechanical: subtracting a trailing average removes the drifting level. It is also a warning, because a test that passes on 439 of 439 names says nothing about which of them is worth trading. The median company closes half of a deviation in 18.8 sessions, quartiles at 16.7 and 21.1, none outside 10.5 to 32.5, so a five-session hold collects about a sixth of the decay.
+The two ADF results split cleanly. Only 32 of 439 log price series reject the unit root at 5%, while the deviation rejects in all 439. That is close to mechanical, since subtracting a trailing average removes the drifting level, and it is a warning: a test passing on 439 of 439 names says nothing about which of them is worth trading. The median company closes half a deviation in 18.8 sessions, quartiles at 16.7 and 21.1, none outside 10.5 to 32.5, so a five-session hold collects about a sixth of the decay.
 
 The raw payoff reads well: 94.1 basis points over five sessions after a signal against 15.8 on an average day, an edge of 78.3 with a t statistic of 17.00, positive in 80.6% of companies. Most of it belongs to the market. Removing the cross-section's own move on the same dates cuts the edge to 23.8 basis points, and the event count shows why: 16,931 of the 31,208 signals fall in 2022, when index-wide declines pushed most members below their averages at once. The five-session windows overlap, so the t statistics are generous.
 
-A 20 basis point round trip then leaves 3.8 basis points for the average company and puts 51.0% of the sample above water, which is a coin toss.
+A 20 basis point round trip leaves 3.8 basis points for the average company and 51.0% of the sample above water, a coin toss.
 
-Sorting on the half-life changes that. The fastest quartile, median 15.3 sessions, keeps 63.1 basis points after the market is removed; the slowest, median 23.2 sessions, gives back 9.4. The rule is identical across the four groups; only the estimated speed of decay differs, and it orders the payoff.
+Sorting on half-life changes that. The fastest quartile, median 15.3 sessions, keeps 63.1 basis points after the market is removed; the slowest, median 23.2 sessions, gives back 9.4. The rule is identical across the four groups; only the estimated speed of decay differs.
 
 **So what?**
 
-Estimate the half-life before trading the rule, not after. One regression per name separates a group worth 63 basis points a trade from a group worth less than nothing, and the same number sets the holding period, since five sessions against an 18.8-session half-life leaves most of the reversion uncollected.
+Estimate the half-life before trading the rule, not after. One regression per name separates a group worth 63 basis points a trade from a group worth less than nothing, and it sets the holding period: five sessions against an 18.8-session half-life leaves most of the reversion uncollected.
 
-Hedge the market leg or accept that most of the payoff is index direction: two thirds of the raw edge is the S&P 500 recovering, available more cheaply through the index itself.
+Hedge the market leg or accept that most of the payoff is index direction: seven tenths of the raw edge is the S&P 500 recovering, available more cheaply through the index.
 
-Set the cost assumption first, then check what survives it. At 20 basis points only the fastest quartile clears with room, so anyone paying wider than that, or trading less liquid names, should treat the rule as unprofitable until their own fills prove otherwise.
+Set the cost assumption first, then check what survives it. At 20 basis points only the fastest quartile clears with room, so anyone paying wider, or trading less liquid names, should treat the rule as unprofitable until their own fills prove otherwise.
 
 *Built with [xfinlink](https://xfinlink.com) — free financial data API for Python. `pip install -U xfinlink`*

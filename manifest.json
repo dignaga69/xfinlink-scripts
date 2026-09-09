@@ -4120,6 +4120,17 @@
       "status": "success",
       "blog_slug": "survivorship-bias-point-in-time-sp500-python",
       "script_path": "scripts/index-universe/survivorship-bias-point-in-time-sp500-python.py"
+    },
+    {
+      "date": "2026-09-09",
+      "category": "mean_reversion, technical_analysis, time_series_analysis, signal_evaluation, econometric_research",
+      "title": "Does Mean Reversion Survive Trading Costs? Moving-Average Deviations in Python",
+      "tickers": [
+        "Point-in-time S&P 500 roster at 2019-12-31 carried by entity_id (501 entities, 439 after screens, 419,204 company-days, 31,208 signals 2021-03-10 to 2024-12-23)"
+      ],
+      "status": "success",
+      "blog_slug": "does-mean-reversion-survive-trading-costs-python",
+      "script_path": "scripts/signal-evaluation/does-mean-reversion-survive-trading-costs-python.py"
     }
   ]
 }

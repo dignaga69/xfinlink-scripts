@@ -53,7 +53,7 @@ for eid, g in px.groupby("entity_id"):
         continue
     fwds[eid], sigs[eid] = fwd.where(valid), sig
     rows.append(dict(
-        entity_id=eid, ticker=g["ticker"].iloc[-1], sector=g["gics_sector"].iloc[-1],
+        entity_id=eid, ticker=g["ticker"].iloc[-1],
         adf_p_dev=adfuller(d, autolag="AIC")[1],
         adf_p_px=adfuller(s.to_numpy(), autolag="AIC")[1],
         ar1=b, half_life=-np.log(2) / np.log(b) if 0 < b < 1 else np.nan,
