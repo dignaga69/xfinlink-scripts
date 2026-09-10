@@ -4160,6 +4160,17 @@
       "status": "success",
       "blog_slug": "negative-book-equity-sp500-python",
       "script_path": "scripts/balance-sheet-health/negative-book-equity-sp500-python.py"
+    },
+    {
+      "date": "2026-09-10",
+      "category": "signal_evaluation, factor_construction, cross_sectional_analysis, momentum_screening, quantitative_research",
+      "title": "Does Proximity to the 52-Week High Beat Momentum? Conditional Quintile Sorts in Python",
+      "tickers": [
+        "Point-in-time S&P 500 rosters at 127 month ends 2016-01 to 2026-07, carried by entity_id (703 companies, 699 with a daily price series; median 491 names ranked per sort)"
+      ],
+      "status": "success",
+      "blog_slug": "52-week-high-vs-momentum-python",
+      "script_path": "scripts/signal-evaluation/52-week-high-vs-momentum-python.py"
     }
   ]
 }
