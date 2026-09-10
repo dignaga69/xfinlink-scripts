@@ -4131,6 +4131,17 @@
       "status": "success",
       "blog_slug": "does-mean-reversion-survive-trading-costs-python",
       "script_path": "scripts/signal-evaluation/does-mean-reversion-survive-trading-costs-python.py"
+    },
+    {
+      "date": "2026-09-10",
+      "category": "market_timing_analysis, drawdown_analysis, time_series_analysis, signal_evaluation, technical_analysis",
+      "title": "How Late Does a Bear Market Signal Arrive? Turning-Point Detection in Python",
+      "tickers": [
+        "Six broad index funds from January 1996 or each fund's launch, whichever is later, to 2026-09-09 (SPY, DIA, MDY, IWM, EFA, EEM; 27 declines of 20% or more, 680 downside crossings of the 200-day average)"
+      ],
+      "status": "success",
+      "blog_slug": "how-late-is-a-bear-market-signal-python",
+      "script_path": "scripts/price-analysis/how-late-is-a-bear-market-signal-python.py"
     }
   ]
 }
