@@ -1,0 +1,5 @@
+29 S&P 500 companies report negative book equity. All 29 turned a profit last fiscal year and 28 threw off free cash: $116bn of it against a combined book deficit of $109bn.
+
+neg = s[s["total_equity"] < 0]
+
+Buybacks and dividends, not distress. [BLOG_LINK]

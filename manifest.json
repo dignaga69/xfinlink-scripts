@@ -4142,6 +4142,24 @@
       "status": "success",
       "blog_slug": "how-late-is-a-bear-market-signal-python",
       "script_path": "scripts/price-analysis/how-late-is-a-bear-market-signal-python.py"
+    },
+    {
+      "date": "2026-09-10",
+      "category": "balance_sheet_health, valuation_ratios, cross_sectional_analysis, index_constituent_analysis",
+      "title": "Does Negative Book Equity Signal Distress? S&P 500 Balance Sheet Screening in Python",
+      "tickers": [
+        "Current S&P 500 roster carried by entity_id (504 members; the 474 with an annual balance sheet for a fiscal year ending 2025-01-01 or later)",
+        "PM",
+        "LOW",
+        "TDG",
+        "SBUX",
+        "MCD",
+        "ABBV",
+        "DELL"
+      ],
+      "status": "success",
+      "blog_slug": "negative-book-equity-sp500-python",
+      "script_path": "scripts/balance-sheet-health/negative-book-equity-sp500-python.py"
     }
   ]
 }
