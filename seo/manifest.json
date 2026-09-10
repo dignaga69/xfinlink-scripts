@@ -555,5 +555,18 @@
     "slug": "log-returns-vs-simple-returns",
     "competitors_mentioned": [],
     "claims_verified": true
+  },
+  {
+    "date": "2026-09-10",
+    "type": "buyers guide",
+    "title": "How Much Historical Stock Data Do You Need?",
+    "slug": "how-much-historical-stock-data-do-you-need",
+    "competitors_mentioned": [
+      "Alpha Vantage",
+      "Massive (formerly Polygon.io)",
+      "yfinance"
+    ],
+    "claims_verified": true,
+    "status": "published"
   }
 ]

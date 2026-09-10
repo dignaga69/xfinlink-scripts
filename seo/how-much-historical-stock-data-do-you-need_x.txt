@@ -1,0 +1,1 @@
+A five-year backtest window contains 91 departures from the S&P 500. A thirty-year window contains 759, which is more names than the index holds at once. Read today's roster backwards and every one of them is missing. How much history the work actually needs: [BLOG_LINK]
